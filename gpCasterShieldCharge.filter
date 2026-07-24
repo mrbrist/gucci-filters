@@ -6,7 +6,10 @@
 ##################################################
 ########## Section 0A - Race Overrides ###########
 ##################################################
-
+Show
+	Class Map
+	AreaLevel >= 100
+	CustomAlertSound "gucci_sounds/download_new_sounds_from_github.mp3" 300
 #Maps
 Show
 	Class Map
@@ -27,6 +30,40 @@ Show
 ##########################################
 
 #####General####
+# 3.29
+Show
+	Class "Chart"
+	SetBackgroundColor 20 96 111
+	SetBorderColor 255 255 155
+	SetTextColor 255 255 155	
+	SetFontSize 45
+	
+Show
+	BaseType "Dead Man's Sulphur"
+	SetBackgroundColor 0 0 0  255
+	SetBorderColor 0 153 0 255
+	SetTextColor 0 153 0 255
+	SetFontSize 40
+
+Show
+	BaseType "Ducat"
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	AreaLevel < 69
+	SetFontSize 45
+	PlayAlertSound 3 300
+	MinimapIcon 0 Red Circle
+	DisableDropSound
+	
+Show
+	BaseType "Message in a Bottle" 
+	SetBorderColor 250 0 125
+	SetTextColor 250 0 125
+	SetFontSize 45
+	PlayAlertSound 6 250
+	MinimapIcon 0 Red Circle
+	PlayEffect Red
+	DisableDropSound
 	
 Show #3.27
 	Class == "Wombgifts"
@@ -921,6 +958,7 @@ Show
 
 Show
 	BaseType "Quicksilver Flask" 
+	Rarity Normal Magic
 	SetTextColor 250 0 125
 	PlayAlertSound 14 300
 	CustomAlertSoundOptional "gucci_sounds/quicksilver.mp3" 300
@@ -934,6 +972,9 @@ Show
 	CustomAlertSoundOptional "gucci_sounds/silverflask.mp3" 300
 	SetFontSize 45
 	MinimapIcon 2 Red Triangle
+
+
+	
 Show
 	BaseType "Goat's Horn"
 	AreaLevel < 13	
@@ -976,7 +1017,7 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
 #	CustomAlertSoundOptional "gucci_sounds/goathorn.mp3" 300
 	MinimapIcon 2 White Circle
 Show
@@ -987,7 +1028,7 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
 #	CustomAlertSoundOptional "gucci_sounds/magicgoat.mp3" 300
 	MinimapIcon 2 Blue Circle
 Show
@@ -998,10 +1039,78 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/raregoat.mp3" 300
+	MinimapIcon 2 Yellow Circle
+	
+Show
+	BaseType "Sage Wand"
+	AreaLevel < 41	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/goathorn.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Sage Wand"
+	AreaLevel < 41	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/magicgoat.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Sage Wand"
+	AreaLevel < 56	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+#	PlayAlertSound 16 300
 #	CustomAlertSoundOptional "gucci_sounds/raregoat.mp3" 300
 	MinimapIcon 2 Yellow Circle
 
+Show
+	BaseType "Pagan Wand"
+	AreaLevel < 41	
+	Rarity Normal
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 255 255 255
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/goathorn.mp3" 300
+	MinimapIcon 2 White Circle
+Show
+	BaseType "Pagan Wand"
+	AreaLevel < 41	
+	Rarity Magic
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 50 50 255
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/magicgoat.mp3" 300
+	MinimapIcon 2 Blue Circle
+Show
+	BaseType "Pagan Wand"
+	AreaLevel < 56	
+	Rarity Rare
+	SetTextColor 0 0 0
+	SetBorderColor 255 0 0
+	SetBackgroundColor 225 225 110
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSoundOptional "gucci_sounds/raregoat.mp3" 300
+	MinimapIcon 2 Yellow Circle
+	
 Show
 	BaseType "Faun's Horn"
 	AreaLevel < 41	
@@ -1010,7 +1119,7 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 255 255 255
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
 	CustomAlertSoundOptional "gucci_sounds/goathorn.mp3" 300
 	MinimapIcon 2 White Circle
 Show
@@ -1021,7 +1130,7 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 50 50 255
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
 	CustomAlertSoundOptional "gucci_sounds/magicgoat.mp3" 300
 	MinimapIcon 2 Blue Circle
 Show
@@ -1032,310 +1141,291 @@ Show
 	SetBorderColor 255 0 0
 	SetBackgroundColor 225 225 110
 	SetFontSize 45
-	PlayAlertSound 16 300
+#	PlayAlertSound 16 300
 	CustomAlertSoundOptional "gucci_sounds/raregoat.mp3" 300
 	MinimapIcon 2 Yellow Circle
 
 
 #### 2 LINK #### (no sound/icon by default)
-
-Show
-	Class "Gloves" "Helm" 
-	ItemLevel <= 25
+Show # 3.29 enable
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	AreaLevel <= 12
 	LinkedSockets = 2
-	Rarity Normal Magic Rare	
-	SocketGroup BB BR GR
+	SocketGroup B
+	Rarity Normal Magic Rare
 	SetBorderColor 75 75 250
 	SetBackgroundColor 0 0 75
-	SetFontSize 45
-#	PlayAlertSound 16 300
-#	CustomAlertSoundOptional "gucci_sounds/bb.mp3" 300 
-#	MinimapIcon 2 Yellow Triangle 
-#Show
-#	Class "Gloves" "Helm" "Boots" "Wand"
-#	ItemLevel <= 25
-#	LinkedSockets = 2
-#	Rarity Normal Magic Rare	
-#	SocketGroup BG RG BB
-#	SetBorderColor 75 75 250
-#	SetBackgroundColor 0 0 75
-#	SetFontSize 45
-#	PlayAlertSound 16 300
-#	CustomAlertSoundOptional "gucci_sounds/bg.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
+	CustomAlertSound "gucci_sounds/2link1blue.mp3" 300 
+
+Show # 3.29 enable
+	Class "Gloves" "Helm" "Boots" "Body Armour"
+	AreaLevel <= 12
+	LinkedSockets = 2
+	SocketGroup R
+	Rarity Normal Magic Rare
+	SetBorderColor 75 75 250
+	SetBackgroundColor 0 0 75
+	CustomAlertSound "gucci_sounds/2link1red.mp3" 300 
+	
+Show #3.29 enable
+	Class "Gloves" "Helm" "Boots"
+	AreaLevel <= 6
+	LinkedSockets = 2
+	Rarity Normal Magic Rare
+	SetBorderColor 75 75 250
+	SetBackgroundColor 0 0 75
+	
 
 #### 3 LINK #### (Sound + Icon till end of A2, hidden past a3)
-
-
-Show
-	Class "Gloves" 
-	AreaLevel < 33	
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/glovergb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Helm" 
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
 	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/helmrgb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Boots" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/bootsrgb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Body Armour"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/chestrgb.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
-	
-
-	
-
-	
-Show
-	Class "Gloves" 
-	AreaLevel < 33	
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
+	LinkedSockets = 3
 	SocketGroup BBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/glove3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Helm" 
-	AreaLevel < 33
-	LinkedSockets = 3	
 	Rarity Normal Magic Rare
-	SocketGroup BBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/helm3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Boots" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/boots3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Body Armour"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/chest3b.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-
-Show
-	Class "Gloves" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/glove2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/3link3blue.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-Show
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup BBG
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkbluebluegreen.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup BB
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3link2blue.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup BG
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkgreenblue.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup RG
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkredgreen.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup R
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3link1red.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup G
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3link1green.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Helm" "Gloves" "Boots" "Body Armour"
+	AreaLevel < 33
+	LinkedSockets = 3
+	SocketGroup B
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3link1blue.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+
+Show #3.29 enable
 	Class "Helm"
-	AreaLevel < 33
-	LinkedSockets = 3	
+	AreaLevel < 23
+	AreaLevel < 23
+	BaseEvasion > 1
+	BaseArmour > 1
+#	BaseEnergyShield < 1
+	LinkedSockets = 3
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/helm2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/3linkhelm.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
+Show #3.29 enable
+	Class "Gloves"
+	AreaLevel < 23
+	AreaLevel < 23
+	BaseEvasion > 1
+	BaseArmour > 1
+#	BaseEnergyShield < 1
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkglove.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-Show
+Show #3.29 enable
 	Class "Boots"
-	AreaLevel < 33
-	LinkedSockets = 3	
+	AreaLevel < 23
+	AreaLevel < 23
+	BaseEvasion > 1
+	BaseArmour > 1
+#	BaseEnergyShield < 1
+	LinkedSockets = 3
 	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/boots2b1g.mp3" 300
+	CustomAlertSound "gucci_sounds/3linkboot.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Body Armour" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
-	SetBorderColor 0 200 0
-#	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/chest2b1g.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-	
-	
-	
-	
-
-
-	
-Show
-	Class "Gloves" 
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/glove2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Helm"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/helm2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-Show
+Show #3.29 enable armour
 	Class "Body Armour"
-	AreaLevel < 33
-	LinkedSockets = 3	
+	AreaLevel < 23
+	BaseEvasion > 1
+	BaseArmour > 1
+#	BaseEnergyShield < 1
+	LinkedSockets = 3
 	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/chest2b1r.mp3" 300
+	CustomAlertSound "gucci_sounds/3linkchest.mp3" 300
 	MinimapIcon 2 Yellow Triangle
-Show
-	Class "boots"
-	AreaLevel < 33
-	LinkedSockets = 3	
+Show #3.29 enable
+	Class "Helm"
+	AreaLevel < 15
+	LinkedSockets = 3
 	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/boots2b1r.mp3" 300
-	MinimapIcon 2 Yellow Triangle
-
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
+	CustomAlertSound "gucci_sounds/3linkhelm.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
+Show #3.29 enable
+	Class "Gloves"
+	AreaLevel < 15
+	LinkedSockets = 3
 	Rarity Normal Magic Rare
-	SocketGroup BBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSoundOptional "gucci_sounds/bbb.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBG BGB GBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSoundOptional "gucci_sounds/bbg.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup BBR BRB RBB
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSoundOptional "gucci_sounds/bbr.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour" "Wand"
-	AreaLevel < 40
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup RGB GRB BRG
-	SetBorderColor 0 200 0
-	SetBackgroundColor 0 35 0
-	SetFontSize 45
-#	CustomAlertSoundOptional "gucci_sounds/bbr.mp3" 300
-#	MinimapIcon 2 Yellow Triangle
-
-
-
-Show
-	Class "Shield"
-	AreaLevel < 33
-	LinkedSockets = 3	
-	Rarity Normal Magic Rare
-	SocketGroup GGR GRG RGG
 	SetBorderColor 0 200 0
 	SetBackgroundColor 0 35 0
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/shield2g1r.mp3" 300
+	CustomAlertSound "gucci_sounds/3linkglove.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Boots"
+	AreaLevel < 15
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkboot.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Body Armour"
+	AreaLevel < 15
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/3linkchest.mp3" 300
 	MinimapIcon 2 Yellow Triangle
 
+Show #3.29 enable
+	Class "Helm"
+	AreaLevel < 23
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSound "gucci_sounds/3linkhelm.mp3" 300
+	MinimapIcon 2 Yellow Triangle	
+Show #3.29 enable
+	Class "Gloves"
+	AreaLevel < 23
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSound "gucci_sounds/3linkglove.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Boots"
+	AreaLevel < 23
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSound "gucci_sounds/3linkboot.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+Show #3.29 enable
+	Class "Body Armour"
+	AreaLevel < 23
+	LinkedSockets = 3
+	Rarity Normal Magic Rare
+	SetBorderColor 0 200 0
+	SetBackgroundColor 0 35 0
+	SetFontSize 45
+#	PlayAlertSound 16 300
+#	CustomAlertSound "gucci_sounds/3linkchest.mp3" 300
+	MinimapIcon 2 Yellow Triangle
+	
 
-Show
+
+Show #3.29 
 	Class "Shield"
 #	BaseEvasion < 1
 	BaseArmour < 1
@@ -1351,140 +1441,141 @@ Show
 	MinimapIcon 2 Yellow Triangle
 
 #### 4 LINK ####
-
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
 	ItemLevel <= 47
 	LinkedSockets = 4
+	SocketGroup BBB
 	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBBB
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/bbbb.mp3" 300
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4link3blue.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
 	LinkedSockets = 4
+	SocketGroup BBG
 	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBBG BBGB BGBB GBBB
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/bbbg.mp3" 300
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkbluebluegreen.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
 	LinkedSockets = 4
-	Sockets < 6 
+	SocketGroup BBR
+	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBBR BBRB BRBB RBBB
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/bbbr.mp3" 300
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkbluebluered.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
 	LinkedSockets = 4
-	Sockets < 6 
+	SocketGroup BB
+	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup BBGG GGBB BGBG GBGB BGGB GBBG
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/bbgg.mp3" 300
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4link2blue.mp3" 300
 	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
 	LinkedSockets = 4
-	Sockets < 6 
+	SocketGroup BG
+	Sockets < 6
 	Rarity Normal Magic Rare
-	SocketGroup GGBR BRGG GBRG RGGB BGGR
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/rgbg.mp3" 300
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkgreenblue.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	SocketGroup RG
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkredgreen.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	SocketGroup RB
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkredblue.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	SocketGroup R
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4link1red.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	SocketGroup G
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4link1green.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Gloves" "Body Armour" "Boots" "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	SocketGroup B
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4link1blue.mp3" 300
 	MinimapIcon 2 Red Hexagon
 
 
-
-	
-#PURE ES#
-Show
+Show #3.29 enable
 	Class "Gloves"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/fourlinkgloves.mp3" 300
-	MinimapIcon 2 Red Hexagon
-Show
-	Class "Helm"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/fourlinkhelmet.mp3" 300
-	MinimapIcon 2 Red Hexagon
-Show
-	Class "Boots"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/fourlinkboots.mp3" 300
-	MinimapIcon 2 Red Hexagon
-Show
-	Class "Body Armour"
-#	BaseEvasion < 1
-#	BaseArmour < 1
-	BaseEnergyShield > 1
-	ItemLevel <= 52
-	LinkedSockets = 4
-	Sockets < 6 
-	Rarity Normal Magic Rare
-	SetBorderColor 0 250 250
-	SetBackgroundColor 0 65 65
-	SetFontSize 45
-	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/fourlinkchest.mp3" 300
-	MinimapIcon 2 Red Hexagon
-Show
-	Class "Gloves" "Helm" "Boots" "Body Armour"
-	ItemLevel <= 52
+	ItemLevel <= 47
 	LinkedSockets = 4
 	Sockets < 6
 	Rarity Normal Magic Rare
@@ -1492,8 +1583,45 @@ Show
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
 #	PlayAlertSound 16 300
-	CustomAlertSoundOptional "gucci_sounds/fourlink.mp3" 300
-	MinimapIcon 2 Green Hexagon
+	CustomAlertSound "gucci_sounds/4linkglove.mp3" 300
+	MinimapIcon 2 Red Hexagon	
+Show #3.29 enable
+	Class "Helm"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkhelm.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Boot"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkboot.mp3" 300
+	MinimapIcon 2 Red Hexagon
+Show #3.29 enable
+	Class "Body Armour"
+	ItemLevel <= 47
+	LinkedSockets = 4
+	Sockets < 6
+	Rarity Normal Magic Rare
+	SetBorderColor 0 250 250
+	SetBackgroundColor 0 65 65
+	SetFontSize 45
+#	PlayAlertSound 16 300
+	CustomAlertSound "gucci_sounds/4linkchest.mp3" 300
+	MinimapIcon 2 Red Hexagon
+
 
 #### Boots ####
 Show
@@ -1519,16 +1647,28 @@ Show
 	PlayAlertSound 14 300
 	CustomAlertSoundOptional "gucci_sounds/rareboots.mp3" 300
 	MinimapIcon 2 Yellow Circle
+	
+# 0 white socket item
+Show
+	Sockets >= 3
+	SocketGroup != W  
+	SetBorderColor 240 0 200
+	SetTextColor 240 0 200
+	PlayAlertSound 10 250
+	SetFontSize 45
+	MinimapIcon 1 Pink Circle
+	PlayEffect Pink
+	DisableDropSound
 
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
-Show
+Show 
 	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
 	ItemLevel <= 47
 	Sockets < 6
 	LinkedSockets <= 3
 	Sockets >= 3
 	Rarity Normal Magic Rare
-	SocketGroup BB BBB BBG RG BRB
+	SocketGroup BB BBB BBG RG BRB BG
 	SetBorderColor 0 250 250
 	SetBackgroundColor 0 65 65
 	SetFontSize 45
@@ -1556,7 +1696,7 @@ Show
 	SetFontSize 45
 	
 #this block shows 1 b items pre ledge#	
-Show
+Show #3.29 remove
 	Class "Gloves" "Helm" "Boots" 
 	AreaLevel < 6
 	Rarity Normal Magic Rare
@@ -1566,7 +1706,7 @@ Show
 	SetFontSize 45	
 	
 #this block shows bb br bg 2 sockets items pre a2#	
-Show
+Show #3.29 remove
 	Class "Gloves" "Helm" "Boots" "Body Armour"
 	AreaLevel < 13
 	Sockets >= "2BR" "2BB" "2BG"
@@ -4447,64 +4587,7 @@ Show
 	MinimapIcon 1 Pink Moon
 	PlayEffect Pink Temp
 
-#Talisman (v2.1) - Maroon
-Show
-	BaseType "Greatwolf Talisman" "Rot Head Talisman"
-	SetBackgroundColor 250 250 250
-	SetBorderColor 0 0 0
-	SetTextColor 250 125 0
-	SetFontSize 45
-	PlayAlertSound 6 250
-	MinimapIcon 0 White Star
-	PlayEffect White
-Show
-	BaseType "Talisman"
-	Class Amulet
-	Rarity Unique
-	SetBackgroundColor 225 100 0
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 38
-	PlayAlertSound 4 100	
-	MinimapIcon 1 Yellow Star
-	PlayEffect Brown
-Show
-	BaseType "Talisman"
-	HasExplicitMod "Virile" "Rotund" "Indomitable" "Unassailable" "Resplendent" "Dazzling" "Ferocity" "Destruction"
-	BaseType "Bonespire Talisman" "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Wereclaw Talisman" "Longtooth Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Rat Talisman"
-	Class Amulet
-	Rarity Rare
-	SetBackgroundColor 50 0 100
-	SetBorderColor 150 0 0
-	SetTextColor 150 50 250
-	SetFontSize 42
-	PlayEffect Purple Temp
-Show
-	BaseType "Bonespire Talisman" "Avian Twins Talisman" "Clutching Talisman" "Fangjaw Talisman" "Horned Talisman" "Primal Skull Talisman" "Wereclaw Talisman" "Longtooth Talisman" "Rotfeather Talisman" "Spinefuse Talisman" "Three Rat Talisman"
-	Class Amulet
-	Rarity Rare
-	SetBackgroundColor 50 0 100
-	SetBorderColor 150 0 0
-	SetFontSize 36
-Show
-	BaseType "Talisman"
-	HasExplicitMod "Virile" "Rotund" "Indomitable" "Unassailable" "Resplendent" "Dazzling" "Ferocity" "Destruction"
-	Rarity Rare
-	Class Amulet
-	SetBackgroundColor 0 50 100
-	SetBorderColor 150 0 0
-	SetTextColor 150 50 250
-	SetFontSize 36
-Show
-	BaseType "Talisman"
-	Rarity Rare
-	Class Amulet
-	SetBackgroundColor 0 50 100
-	SetBorderColor 150 0 0
-Hide
-	BaseType "Talisman"
-	Rarity Normal Magic
-	Class Amulet
+
 
 #Perandus (v2.2) - Orange
 Show
@@ -5337,33 +5420,7 @@ Show
 	PlayEffect Grey
 
 #Legion (v3.7)
-#incubators
-Show
-	BaseType "Geomancer's"
-	Class Incubator
-	SetBackgroundColor 150 0 250
-	SetBorderColor 250 250 250
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayEffect Purple
-	PlayAlertSound 10 200
-	MinimapIcon 0 Purple Star
-Show
-	BaseType "Thaumaturge's" "Time-Lost" "Gemcutter's" "Ornate" "Mysterious" "Celestial" "Cartographer's" "Fine" "Diviner's" "Blighted" "Maddening"
-	Class Incubator
-	SetBackgroundColor 125 0 225
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 45
-	PlayEffect Purple Temp
-	PlayAlertSound 11 200
-	MinimapIcon 2 Purple Circle
-Show
-	Class Incubator
-	SetBackgroundColor 100 0 200
-	SetBorderColor 0 0 0
-	SetTextColor 0 0 0
-	SetFontSize 40
+
 #splinters/emblems. note that timeless jewels are in the Jewel section
 Show
 	BaseType "Emblem"
