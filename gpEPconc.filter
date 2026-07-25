@@ -1620,16 +1620,16 @@ Show
 	CustomAlertSound "gucci_sounds/rareboots.mp3" 300
 	MinimapIcon 2 Yellow Circle
 # 0 white socket item
-Show
-	Sockets >= 3
-	SocketGroup != W  
-	SetBorderColor 240 0 200
-	SetTextColor 240 0 200
-	PlayAlertSound 10 250
-	SetFontSize 45
-	MinimapIcon 1 Pink Circle
-	PlayEffect Pink
-	DisableDropSound
+#Show
+#	Sockets >= 3
+#	SocketGroup != W  
+#	SetBorderColor 240 0 200
+#	SetTextColor 240 0 200
+#	PlayAlertSound 10 250
+#	SetFontSize 45
+#	MinimapIcon 1 Pink Circle
+#	PlayEffect Pink
+#	DisableDropSound
 #This block below highlights 3/4 socket items with 2-3 links that are useable. Edit SocketGroup colors according to your needs. Must ALWAYS be at bottom
 Show
 	Class "Gloves" "Helm" "Boots" "Body Armour" "Shield"
